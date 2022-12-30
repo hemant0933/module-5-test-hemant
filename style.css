@@ -1,0 +1,314 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+ @import url('/responsive.css');
+ :root{
+    /* Background Color */
+    --bg-black:#090b3c;
+    --bg-white:#fff;
+    --bg-light-white:#fcfcfc;
+    --bg-light-2:#f2f7fa;
+    --bg-dark-green:#0e9d80;
+    --bg-features-1:#fff6d6;
+    --bg-features-2:#ebdcf9;
+    --bg-features-3:#ddf5fc;
+    --bg-features-4:#dcf6e8;
+    --bg-features-5:#f8e4e1;
+    --bg-features-6:#fbffd4;
+
+    /* Text Color */
+    --text-black:#000;
+    --text-white:#fff;
+    --text-dark-gray:#4c535d; 
+    --text-light-2:#798089;
+    --text-light-3:#5e5e72;
+    --text-light-4:#A0A0A0;
+    --text-dark-green:#12c4a0;
+    --text-orange:#ff5d2a;
+    --text-yellow:#ffc100;
+
+    /* Fonts */
+    --primary-font: 'Inter';
+    --secondary-font: 'Inter', sans-serif;
+    --normal-font-weight:300;
+    --regular-font-weight:400;
+    --bold-font-weight:700;
+}
+
+/* navbar section */
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Inter',sans-serif ;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar-wrapper{
+   z-index: 1000;
+   position: fixed;
+   max-width: 100%;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: black;
+   border-bottom: 1px white solid;
+   padding: 0 10px;
+}
+.navbar-wrapper .navbar-container{
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-container .left{
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+}
+.navbar-container .right ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    /* text-decoration: none; */
+}
+
+.right ul li{
+    list-style: none;
+}
+.right ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 19px;
+    padding: 0 20px ;
+}
+/* main heading and laptop image section start */
+
+.main-wrapper{
+    width: 100%;
+    margin-top: 50px;
+    background-color: black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.inner-container{
+    width: 80%;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inner-container .box1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-heading{
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 180px;
+}
+
+/* animation for heading text */
+.animate span{
+    animation: colortext;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes colortext{
+   0%{
+    color: white;
+   }
+ 
+   90%{
+    color: rgb(166, 157, 154);
+   }
+}
+
+
+
+.right-container img{
+    width: 80%;
+}
+.inner-container .box2{
+    width: 10%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+/* the about us section start */
+
+.aboutus{
+    width: 100%;
+    background-color: white;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutus .aboutwrapper{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.aboutwrapper .right-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.right-text .aboutus-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+.right-text .aboutus-para{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    padding-top: 30px;
+}
+
+/* our services section */
+
+.ourservices{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.ourservices .ourservies-wrapper{
+    width: 90%;
+}
+.ourservies-wrapper .services-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 90px;
+}
+
+.three-box {
+    display: inline-flex;
+    overflow-x: scroll;
+    white-space:nowrap;
+}
+.three-box .item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+    padding: 30px;
+    border: 2px solid black;
+}
+.item .service-subtitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 61px;
+    width: 100px;
+    height: 50px;
+}
+.item .service-text{
+    font-family: 'Inter';
+    width: 200px;
+    height: 200px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 29px;
+}
+.item:hover{
+    color: white;
+    background-color: black;
+    transition-duration: 0.3s;
+}
+
+/* contact us section */
+
+.contactus{
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactus .contactus-wrapper{
+    width: 90%;
+}
+.contactus-wrapper .contact-title {
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 90px;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.contact-form #fname{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.contact-form  #lname{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.contact-form #email{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+   
+}
+.contact-form #reason{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.contact-form button{
+    width: 15%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
