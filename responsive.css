@@ -2,7 +2,8 @@
 /* Extra small devices (phones, 600px and down) */
 @media (min-width: 200px) and (max-width:600px){
     
-    .navbar-wrapper{
+    header>.navbar-wrapper{
+        width: 2005px;
         height: 100px;
     }
     .navbar-wrapper.navbar-container {
@@ -52,9 +53,33 @@
     .right-text div{
         margin-left: 50px;
     }
+    #contactus{
+        width: 500%;
+    }
 }
 
+/* @media (max-width:1120px){
+   body{
+    top: 0;
+    left: 0;
+    right: 0;
+   }
+    #home{
+        width: 1140px;
+    }
+    .left-heading h1{
+        font-size: 6rem;
+    }
+} */
+/* @media and (min-width:900px)and(max-width:1073px){
+    .navbar-container .right{
+        margin-right:-20px
+    } */
+    /* .main-wrapper{
 
+    } */
+
+/* } */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* @media only screen and (min-width: 600px) {} */
 
